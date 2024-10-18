@@ -1,0 +1,38 @@
+#container {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+}
+
+.box {
+  display: flex;
+  background-color: lightgray;
+  width: 30%;
+  height: 100px;
+  margin: 2%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* point de rupture tablette */
+@media (min-width: 600px) and (max-width: 960px) {
+  #container {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex-grow: 1; /* La boite peut prendre plus de place si elle le peut */
+  }
+}
+
+/* point de rupture smarthone */
+@media (max-width: 650px) {
+  #container {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 95%; /* les boites prennent toute la largeur disponible */
+  }
+}

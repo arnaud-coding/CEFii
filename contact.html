@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet" />
+  <title>Me contacter</title>
+</head>
+
+<body>
+  <div id="wrapper" class="sofadi-one-regular">
+    <header>
+      <h3>Me contacter</h3>
+      <hr />
+    </header>
+
+    <main>
+      <!-- formulaire de contact -->
+      <form id="formContainer" class="overflowing">
+        <div id="input-text">
+          <div class="zone" id="entreprise">
+            <label for="entrepriseInput">Entreprise</label>
+            <input id="entrepriseInput" type="text" placeholder="Société" />
+          </div>
+
+          <div class="zone" id="nom">
+            <label for="lastName">Nom</label>
+            <input id="lastName" type="text" placeholder="votre nom" />
+          </div>
+
+          <div class="zone" id="prenom">
+            <label for="firstName">Prénom</label>
+            <input id="firstName" type="text" placeholder="votre prénom" />
+          </div>
+        </div>
+
+        <!-- rôle dans l'entreprise -->
+        <div class="zone">
+          <fieldset id="entreprise-role">
+            <legend>Rôle dans l'entreprise:</legend>
+            <div>
+              <input type="radio" id="rh" />
+              <label for="rh">RH</label>
+            </div>
+            <div>
+              <input type="radio" id="manager" />
+              <label for="manager">Manager</label>
+            </div>
+            <div>
+              <input type="radio" id="direction" />
+              <label for="direction">Direction</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- message -->
+        <div class="zone" id="messageZone">
+          <label for="message">Message</label><br />
+          <textarea name="message" id="message" placeholder="écrivez votre message ici"></textarea>
+        </div>
+
+        <!-- bouton valider le formulaire -->
+        <div id="submitButton">
+          <button type="button" id="btn">Envoyer</button>
+          <label id="hello" for="btn"></label>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <hr />
+      <a href="./index.html">Retourner au CV</a>
+    </footer>
+  </div>
+  <script src="contact.js"></script>
+</body>
+
+</html>

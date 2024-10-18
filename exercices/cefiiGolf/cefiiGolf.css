@@ -1,0 +1,805 @@
+.open-sans-uppercase {
+   font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   text-transform: uppercase;
+   font-variation-settings:
+      "wdth" 100;
+}
+
+.lustria-regular {
+   font-family: "Lustria", serif;
+}
+
+.open-sans-regular {
+   font-family: "Open Sans", sans-serif;
+   font-optical-sizing: auto;
+   font-variation-settings:
+      "wdth" 100;
+}
+
+#container {
+   max-width: 1280px;
+   margin: 0 auto;
+   border: solid 1px #F6F1EE;
+}
+
+nav {
+   position: fixed;
+   left: 7.75%;
+   top: 0;
+   height: 6em;
+   width: 84.5%;
+   z-index: 9999;
+   background-color: white;
+}
+
+#navBar {
+   display: flex;
+   justify-content: space-between;
+   align-items: end;
+   height: 6em;
+}
+
+#cefiiGolfLogo {
+   width: 30%;
+   margin: 0.75em 1em;
+}
+
+#darkMode {
+   margin-left: 2em;
+   margin-bottom: 0.825em;
+   font-size: 1.325em;
+   cursor: pointer;
+}
+
+#navMenu {
+   width: 60%;
+   display: flex;
+   justify-content: space-evenly;
+   list-style-type: none;
+   font-size: 0.875em;
+}
+
+#domainLi {
+   position: relative;
+}
+
+#domainLinks {
+   list-style-type: none;
+   padding-inline-start: 0;
+   position: absolute;
+   bottom: 1em;
+}
+
+#domainLinks li {
+   margin: 0.1em 0;
+}
+
+#domainDownArrow {
+   color: #BF9A3C;
+}
+
+.hide {
+   display: none;
+}
+
+.display:hover .hide {
+   display: block;
+}
+
+.black {
+   text-decoration: none;
+   background-color: white;
+   color: #3B3A3A;
+}
+
+.white {
+   text-decoration: none;
+   background-color: #2c2c2c;
+   color: #F6F1EE;
+}
+
+nav a:hover {
+   color: #BF9A3C;
+}
+
+#homeLink {
+   text-decoration: underline;
+   text-underline-offset: 8px;
+   text-decoration-thickness: 2px;
+   color: #BF9A3C;
+}
+
+.burger {
+   display: none;
+   margin: 1em 0.5em 1em 1em;
+}
+
+.burger i {
+   font-size: 32px;
+   color: #BF9A3C;
+}
+
+.yellowIcon {
+   font-size: 32px;
+   color: #BF9A3C;
+}
+
+#fondHeaderTitle {
+   background-image: url(./img/bandeau.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   border-top: solid 0.5em #BDA672;
+   margin-top: 6em;
+   position: relative;
+   height: 42em;
+}
+
+#fondHeaderTitle h1 {
+   color: white;
+   margin: 0;
+   font-size: 3.5em;
+   text-shadow: 1px 1px 2px black, -1px 1px 2px black;
+   position: absolute;
+   top: 4em;
+   left: 2em;
+}
+
+#headerSquares {
+   display: flex;
+   justify-content: space-evenly;
+   width: 100%;
+   position: absolute;
+   top: 32em;
+}
+
+#headerSquares p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#headerSquares p::after {
+   content: '';
+   width: 30%;
+   flex: auto;
+   margin-top: 2em;
+   border-top: solid 3px #BDA672;
+}
+
+.squareItems {
+   text-align: center;
+   width: 20%;
+   padding: 2em;
+   border: solid 2px #F6F1EE;
+}
+
+.squareColorLight {
+   background-color: white;
+   color: #2c2c2c;
+}
+
+.squareColorDark {
+   background-color: #2c2c2c;
+   color: white;
+}
+
+#mainContent {
+   margin-top: 10em;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#mainContent h3 {
+   margin-top: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+#mainContent h3::after {
+   content: '';
+   flex: auto;
+   width: 100%;
+   margin-top: 1em;
+   border: solid 2px #BF9A3C;
+}
+
+#mainLeft {
+   display: flex;
+   flex-direction: column;
+   width: 55%;
+}
+
+#aPropos {
+   display: flex;
+}
+
+#aPropsTexte {
+   display: flex;
+   flex-direction: column;
+   padding-left: 4em;
+   padding-right: 2em;
+}
+
+#savoirPlus {
+   display: flex;
+   margin-top: 4em;
+}
+
+#savoirPlusUl {
+   list-style-type: none;
+   padding-inline-start: 1em;
+}
+
+#savoirPlusTexte {
+   display: flex;
+   flex-direction: column;
+   padding-left: 4em;
+   width: 46%;
+}
+
+#aLaUne {
+   width: 25%;
+}
+
+#aLaUneImg {
+   width: 255px;
+   margin-top: 2em;
+   position: relative;
+}
+
+#aLaUne legend {
+   position: absolute;
+   top: 7.525em;
+   left: 6.2em;
+   color: white;
+   background-color: #BF9A3C;
+   padding: 0.25em;
+   font-size: 1.7em;
+   font-weight: 600;
+}
+
+#readMoreBtn {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 2em;
+   width: 50%;
+   color: #F6F1EE;
+   background-color: #BF9A3C;
+   border-radius: 0.2em;
+   font-weight: 650;
+   font-size: 0.9em;
+}
+
+#readMoreBtn a {
+   text-decoration: none;
+   color: #F6F1EE;
+}
+
+#videoBlock {
+   margin: 4em 0;
+}
+
+#videoBlock h3 {
+   margin-left: 4em;
+   display: flex;
+   flex-direction: column;
+}
+
+#videoBlock h3::after {
+   content: '';
+   flex: auto;
+   width: 32%;
+   margin-top: 0.8em;
+   border-bottom: solid 3px #BF9A3C;
+}
+
+#videoContainer {
+   position: relative;
+   overflow: hidden;
+   width: 100%;
+   padding-top: 56.25%;
+}
+
+.responsiveIframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+}
+
+#newsletterFondGolfer {
+   height: 45em;
+   background-image: url(./img/golfeur.jpeg);
+   background-size: 100%;
+   background-position: bottom;
+   background-repeat: no-repeat;
+}
+
+#newsletter {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 80%;
+   height: 6em;
+   margin: 3em auto;
+   border-top: solid 3px #BDA672;
+   border-bottom: solid 3px #BDA672;
+}
+
+#newsletter i {
+   color: #BF9A3C;
+   font-size: 32px;
+}
+
+#newsletter label {
+   color: #3B3A3A;
+   font-size: 14px;
+}
+
+#newsletter input {
+   border: solid 2px #BDA672;
+}
+
+#newsletter button {
+   background-color: #BF9A3C;
+   color: #F6F1EE;
+   font-size: 0.775em;
+   font-weight: bold;
+   border: none;
+   border-radius: 0.2em;
+   padding: 0.4em 0.8em;
+}
+
+.littleSpace {
+   margin: 0 0.1em;
+}
+
+#writeEmailRappel {
+   padding: 1em;
+   font-style: oblique;
+}
+
+#mailInput::placeholder {
+   padding-left: 0.3em;
+   font-size: smaller;
+   font-style: italic;
+}
+
+footer {
+   background-color: #2c2c2c;
+   color: #F6F1EE;
+}
+
+#footerLinks {
+   display: flex;
+   justify-content: space-between;
+   border-top: solid 8px #BDA672;
+   padding: 2em 5em;
+   font-size: 0.9rem;
+}
+
+#footerLinks a {
+   text-decoration: none;
+   color: #F6F1EE;
+   font-weight: 400;
+}
+
+#footerLinks a:hover {
+   color: #BDA672;
+}
+
+footer ul {
+   list-style-type: none;
+   padding-inline-start: 0;
+}
+
+#adress {
+   text-align: center;
+   font-weight: 400;
+}
+
+#adress i {
+   font-size: 30px;
+}
+
+#socialMediasIcons {
+   display: flex;
+   justify-content: space-between;
+   font-size: 30px;
+}
+
+#footerLine {
+   height: 2px;
+   background-color: #F6F1EE;
+   width: 90%;
+   margin: 0 5%;
+}
+
+#legalNotices {
+   font-size: small;
+   text-align: center;
+   margin: 0;
+   padding-top: 2.5em;
+   padding-bottom: 1.5em;
+}
+
+/* Point de rupture tablette */
+@media (min-width: 600px) and (max-width: 950px) {
+
+   #cefiiGolfLogo {
+      width: 40%;
+   }
+
+   #navBar {
+      position: relative;
+   }
+
+   #navMenu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 6.4em;
+      z-index: 1;
+      padding-inline-start: 5%;
+      width: 95%;
+      border-bottom: solid 5px #BF9A3C;
+   }
+
+   #navMenu li {
+      margin: 2em 0;
+   }
+
+   #domainLi {
+      position: static;
+   }
+
+   #domainLinks {
+      position: static;
+      padding-inline-start: 1em;
+   }
+
+   #domainLinks :nth-child(3) {
+      margin-bottom: 0;
+   }
+
+   #domainLinks :nth-child(-n+2) a {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #domainLinks :nth-child(-n+2) a::after {
+      content: '';
+      flex: auto;
+      width: 95%;
+      margin-top: 1em;
+      margin-left: -2em;
+      border-top: solid 2px #BF9A3C;
+   }
+
+   .burger {
+      display: block;
+   }
+
+   #fondHeaderTitle {
+      z-index: 0;
+   }
+
+   #fondHeaderTitle h1 {
+      font-size: 3em;
+      top: 3em;
+   }
+
+   #headerSquares {
+      flex-wrap: wrap;
+      top: 20em;
+   }
+
+   .squareItems {
+      width: 30%;
+      margin-bottom: 2em;
+   }
+
+   #mainContent {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.875rem;
+      margin-top: 20em;
+   }
+
+   #mainLeft {
+      width: 100%;
+   }
+
+   #aLaUne {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   #aLaUne h3 {
+      width: 420px;
+   }
+
+   #aLaUneTitleAndImg {
+      display: flex;
+      flex-direction: column;
+      width: 255px;
+      margin-top: 2em;
+   }
+
+   #aLaUne legend {
+      top: 8.85em;
+      left: 7.55em;
+   }
+
+   #aLaUneText {
+      width: 450px;
+      margin: 5.6em 10em 1em 2em;
+   }
+
+   #readMoreBtn {
+      width: 8rem;
+   }
+
+   #videoBlock {
+      margin-top: 2em;
+   }
+
+   #videoBlock h3 {
+      margin-left: 0.25em;
+   }
+
+   #videoBlock h3::after {
+      width: 60%;
+   }
+
+   #newsletter {
+      width: 100%;
+   }
+
+   #newsletterFondGolfer {
+      height: 30em;
+   }
+
+   #subMenu {
+      display: none;
+   }
+
+   #adress i {
+      font-size: 24px;
+   }
+
+   #footerLinks {
+      padding: 2em 0.5em;
+      font-size: 0.8rem;
+   }
+
+   #footerLine {
+      width: 100%;
+      margin: 0;
+   }
+
+}
+
+/* Point de rupture smartphone */
+@media (max-width: 600px) {
+
+   #cefiiGolfLogo {
+      width: 50%;
+   }
+
+   #navBar {
+      position: relative;
+   }
+
+   #navMenu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 6.4em;
+      z-index: 1;
+      padding-inline-start: 5%;
+      width: 95%;
+      border-bottom: solid 5px #BF9A3C;
+   }
+
+   #navMenu li {
+      margin: 2em 0;
+
+   }
+
+   #domainLi {
+      position: static;
+   }
+
+   #domainLinks {
+      position: static;
+      padding-inline-start: 1em;
+   }
+
+   #domainLinks :nth-child(3) {
+      margin-bottom: 0;
+   }
+
+   #domainLinks :nth-child(-n+2) a {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #domainLinks :nth-child(-n+2) a::after {
+      content: '';
+      flex: auto;
+      width: 95%;
+      margin-top: 1em;
+      margin-left: -2em;
+      border-top: solid 2px #BF9A3C;
+   }
+
+   .burger {
+      display: block;
+   }
+
+   #fondHeaderTitle {
+      z-index: 0;
+   }
+
+   #fondHeaderTitle h1 {
+      font-size: 1.5em;
+      top: 1.5em;
+   }
+
+   #headerSquares {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      top: 8em;
+      width: 100%;
+   }
+
+   .squareItems {
+      margin-top: 1em;
+      width: 50%;
+   }
+
+   #mainContent {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.850rem;
+      margin-top: 30em;
+   }
+
+   #mainContent h3 {
+      font-size: 1.2rem;
+   }
+
+   #mainLeft {
+      width: 100%;
+   }
+
+   #aPropos {
+      flex-direction: column-reverse;
+   }
+
+   #aPropsTexte {
+      padding-left: 0.5em;
+   }
+
+   #aproposImg {
+      display: flex;
+      justify-content: center;
+   }
+
+   #aproposImg img {
+      width: 350px;
+   }
+
+   #aPropos h3 {
+      width: 255px;
+   }
+
+   #savoirPlus {
+      flex-direction: column-reverse;
+   }
+
+   #savoirPlusTexte {
+      padding-left: 0.5em;
+   }
+
+   #savoirPlusImg {
+      display: flex;
+      justify-content: center;
+   }
+
+   #savoirPlusImg img {
+      width: 350px;
+   }
+
+   #aLaUne {
+      margin-top: 5em;
+      width: 100%;
+   }
+
+   #aLaUne h3 {
+      width: 255px;
+   }
+
+   #readMoreBtn {
+      width: 130px;
+   }
+
+   #aLaUne legend {
+      top: 9.175em;
+      left: 7.85em;
+   }
+
+   #videoBlock h3 {
+      margin-left: 0.25em;
+   }
+
+   #videoBlock h3::after {
+      width: 70%;
+   }
+
+   #newsletterFondGolfer {
+      height: 25em;
+   }
+
+   #newsletter {
+      flex-direction: column;
+      width: 100%;
+      padding: 2em 0;
+   }
+
+   #newsletter :nth-child(n+3) {
+      margin-top: 0.5em;
+   }
+
+   #newsletter i {
+      display: none;
+   }
+
+   #btnFlex {
+      display: flex;
+      justify-content: flex-end;
+      width: 170px;
+   }
+
+   #footerLinks {
+      flex-direction: column;
+   }
+
+   #subMenu {
+      display: none;
+   }
+
+   #socialMedias {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #socialMediasIcons {
+      justify-content: space-around;
+      width: 25%;
+   }
+
+   #socialMedias i {
+      font-size: 40px;
+   }
+
+   #adress i {
+      font-size: 32px;
+   }
+
+   #footerLine {
+      width: 100%;
+      margin: 0;
+   }
+
+}

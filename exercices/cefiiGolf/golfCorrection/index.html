@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEFii Golf - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lustria&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="principal">
+            <a href="index.html" title="retour accueil">
+                <div class="logoContainer">
+                    <img class="simpleLogo" src="images/logo/logo-golf.png" alt="logo CEFii Golf" width="340">
+                    <img class="animLogo" src="images/logo/logo.png" alt="logo CEFii Golf">
+                    <div class="animLogo">
+                        <img class="effectBall" src="images/logo/fx-left.png" alt="effet gauche"><img class="ball"
+                            src="images/logo/balle.png" alt="balle de golf"><img class="effectBall"
+                            src="images/logo/fx-right.png" alt="effet droit">
+                    </div>
+                </div>
+            </a>
+            <label class="btnMenu" for="checkMenu">
+                <i class="fas fa-bars"></i>
+            </label>
+            <!-- <input type="checkbox" id="checkMenu"> -->
+            <ul class="menu flex">
+                <li><a href="index.html" class="active">accueil</a></li>
+                <li><a href="#">parcours</a></li>
+                <li><a href="#">le domaine <i class="fas fa-chevron-down"></i></a>
+                    <ul class="subMenu">
+                        <li><a href="#">le parc</a></li>
+                        <li><a href="#">hôtel</a></li>
+                        <li><a href="#">restaurant</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">les tournois</a></li>
+                <li><a href="contact.html">tarifs & contacts</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Bienvenue <br>au Golf du CEFii !</h1>
+        </header>
+        <div class="header-bottom flex innerContent">
+            <div>
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Nos événements</h3>
+                <p>Inscrivez-vous au prochain tournoi de Golf</p>
+            </div>
+            <div>
+                <i class="fas fa-golf-ball"></i>
+                <h3>Nos services</h3>
+                <p>Découvrez tous nos services disponibles à l'année</p>
+            </div>
+            <div>
+                <i class="fas fa-info-circle"></i>
+                <h3>Information</h3>
+                <p>Les parcours sont momentanément fermés</p>
+            </div>
+        </div>
+        <main>
+            <div class="flex accueilTop innerContent">
+                <section>
+                    <div class="propos flex-start">
+                        <img src="images/a-propos.jpg" alt="golfeur">
+                        <div>
+                            <h2>&Agrave; propos de nous</h2>
+                            <p>
+                                Codifié en Écosse en 1754 par le Royal & Ancient Golf Club de Saint Andrews, le golf est
+                                un
+                                sport de précision se jouant en plein air,
+                                qui consiste à envoyer une balle dans un trou à l'aide de clubs.
+                                Le but du jeu consiste à effectuer, sur un parcours défini, le moins de coups possible.
+                                Précision, endurance, technicité, concentration
+                                sont des qualités primordiales pour cette activité.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="savoir flex-start">
+                        <img src="images/en-savoir-plus.jpg" alt="golfeuse enfant">
+                        <div>
+                            <h2>En savoir plus</h2>
+                            <ul>
+                                <li><a href="#">Votre licence</a></li>
+                                <li><a href="#">Vos droits</a></li>
+                                <li><a href="#">Votre parcours</a></li>
+                                <li><a href="#">Vos soirées</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <article class="une">
+                    <h2>&Agrave; la une</h2>
+                    <div>
+                        <figure>
+                            <img src="images/a-la-une.jpg" alt="main récupérant une balle" width="300">
+                            <figcaption>31/07</figcaption>
+                        </figure>
+                        <div>
+                            <p>Comment augmenter la puissance de votre swing ?</p>
+                            <p>
+                                Pour gagner de la vitesse il faut disposer d'énergie et l'utiliser au mieux. À la montée
+                                nous
+                                accumulons de l'énergie potentielle de pesanteur.
+                                Pendant la descente nous transformons cette énergie en énergie cinétique avec un minimum
+                                de
+                                pertes
+                                pour accélérer jusqu'au finish.
+                            </p>
+                            <a href="#" class="next btn">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <section>
+                <div class="innerContent">
+                    <h2>Découvrez notre dernière vidéo !</h2>
+                </div>
+                <iframe width="100%" height="566" src="https://www.youtube.com/embed/DbNQ52R0zNU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
+            <aside id="newsletter">
+                <form action="" class="innerContent">
+                    <i class="far fa-envelope"></i>
+                    <div class="innerForm">
+                        <label for="email">Inscription à la newsletter</label>
+                        <input type="email" name="email" id="email" placeholder="Votre adresse email" required>
+                        <div>
+                            <input type="submit" value="Valider" class="btn">
+                        </div>
+                    </div>
+                </form>
+            </aside>
+        </main>
+        <footer>
+            <div class="flex innerContent">
+                <ul class="menuFooter">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Parcours</a></li>
+                    <li><a href="#">Le domaine</a></li>
+                    <li><a href="#">Les tournois</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <address>
+                    <i class="fas fa-map-marker-alt"></i><br>
+                    18 rue du Green<br>
+                    49049 GOLF-LAND
+                </address>
+                <div class="reseaux">
+                    <h3>Suivez-nous !</h3>
+                    <div class="flex">
+                        <a href="#" title="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; Copyright | Production interne | &reg; Tous droits réservés</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

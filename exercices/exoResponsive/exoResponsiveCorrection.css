@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex-grow: 1; /* La boîte peut prendre plus de place si elle le peut */
+  margin: 1em;
+  height: 150px;
+  background-color: #f3f3f3;
+  text-align: center;
+  line-height: 150px;
+}
+
+/* Points de rupture smartphone */
+@media (max-width: 600px) {
+  .box {
+    width: 100%; /* Les boîtes prennent toute la largeur disponible */
+  }
+}
+
+/* Points de rupture tablette */
+@media (min-width: 600px) and (max-width: 960px) {
+  .box {
+    width: 50%; /* Les boîtes prennent la moitié de la largeur disponible */
+  }
+}
+
+/* Points de rupture petit écran */
+@media (min-width: 960px) {
+  .box {
+    width: 33.33%; /* Les boîtes prennent un tiers de la largeur disponible */
+  }
+}
+
+/* Points de rupture grand écran */
+@media (min-width: 1200px) {
+  .box {
+    width: 25%; /* Les boîtes prennent un quart de la largeur disponible */
+  }
+}

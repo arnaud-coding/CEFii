@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/421fcfdcfb.js" crossorigin="anonymous"></script>
+    <title>Accueil</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="flex">
+                <a href="index.html" title="retour vers Accueil">
+                    <div id="logoEarLeft">
+                        <img src="img/logo.jpg">
+                    </div>
+                </a>
+
+                <div id="navMenu">
+                    <a href="index.html">accueil</a>
+                    <a href="#">programmation</a>
+                    <a href="évènements.html">évènements</a>
+                    <a href="#">billeterie</a>
+                    <a href="#">contact</a>
+                </div>
+
+                <a href="index.html" title="retour vers Accueil">
+                    <div id="logoEarRight">
+                        <img src="img/logo.jpg">
+                    </div>
+                </a>
+            </nav>
+        </header>
+
+        <main>
+
+            <div id="popup">
+                <h2>Cookies</h2>
+                <div id="textAndCookie">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, beatae ut. Vero
+                        necessitatibus dolorum iste est eum fugit recusandae alias sequi cum accusamus facere pariatur,
+                        autem tempora porro ullam. Itaque.
+                    </p>
+                    <div id="cookie">
+                        <img src="img/cookie-aux-fines-chips.png">
+                    </div>
+                </div>
+                <div>
+                    <button class="closeCookies">Accepter</button>
+                    <button class="closeCookies">refuser</button>
+                </div>
+            </div>
+
+            <section id="artists">
+                <h2>à ne surtout pas manquer</h2>
+                <div id="artistsImages" class="flex">
+                    <figure>
+                        <img src="img/artiste1.jpg">
+                        <figcaption>LALALALA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/artiste2.jpg">
+                        <figcaption>LILILILI</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/artiste3.jpg">
+                        <figcaption>LULULULULU</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/artiste4.jpg">
+                        <figcaption>LOULOULOULOU</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section id="news" class="flex">
+                <article class="articles">
+                    <h3>Actu 1</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis eius, alias, itaque
+                        provident est neque enim vero, nemo sapiente cupiditate officia natus eveniet explicabo. Ipsum
+                        at nobis aliquid accusamus.</p>
+                </article>
+                <article class="articles">
+                    <h3>Actu 2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis eius, alias, itaque
+                        provident est neque enim vero, nemo sapiente cupiditate officia natus eveniet explicabo. Ipsum
+                        at nobis aliquid accusamus.</p>
+                </article>
+                <article class="articles">
+                    <h3>Actu 3</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis eius, alias, itaque
+                        provident est neque enim vero, nemo sapiente cupiditate officia natus eveniet explicabo. Ipsum
+                        at nobis aliquid accusamus.</p>
+                </article>
+                <article class="articles">
+                    <h3>Actu 4</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum reiciendis eius, alias, itaque
+                        provident est neque enim vero, nemo sapiente cupiditate officia natus eveniet explicabo. Ipsum
+                        at nobis aliquid accusamus.</p>
+                </article>
+            </section>
+
+            <h3 id="asideTitle">EN LIVE</h3>
+            <aside>
+                <div id="video">
+                    <iframe src="https://www.youtube.com/embed/a_FPOTyL7h4?si=4Z6RmmCSHdmQYVL1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div id="footerFirstZone" class="flex">
+                <div id="socialMedias">
+                    <p>Partagez vos meilleurs moments</p>
+                    <div id="socialMediasIcons">
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+                <form id="newsletter">
+                    <label for="email">Restez informé sur les actualités</label>
+                    <div id="inputAndButton">
+                        <ul>
+                            <li>
+                                <input id="email" type="email" placeholder="Renseignez votre e-mail">
+                            </li>
+
+                            <li class="hideLi">
+                                <p id="emailWarning"></p>
+                            </li>
+                        </ul>
+                        <button id="validate" type="button">
+                            <i class="fa-solid fa-circle-right"></i>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+            <div id="footerSecondZone" class="flex">
+                <div id="footerMenu">
+                    <a href="#">Contact</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">CGV</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Plan de site</a>
+                </div>
+
+                <div id="copyright">
+                    <p>&copy; Copyright 2022 - Tous droits réservés</p>
+                </div>
+                <i id="backToTop" class="fa-solid fa-circle-arrow-up"></i>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,605 @@
+.open-sans-uppercase {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.lustria-regular {
+    font-family: "Lustria", serif;
+}
+
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+#container {
+    max-width: 1280px;
+    margin: 0 auto;
+    border: solid 1px #F6F1EE;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 6em;
+}
+
+#cefiiGolfLogo {
+    width: 30%;
+    margin: 0.75em 1em;
+}
+
+#darkMode {
+    margin-left: 2em;
+    margin-bottom: 0.825em;
+    font-size: 1.325em;
+}
+
+#navMenu {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 0.875em;
+}
+
+#domainLi {
+    position: relative;
+}
+
+#domainLinks {
+    list-style-type: none;
+    padding-inline-start: 0;
+    position: absolute;
+    bottom: 1em;
+}
+
+#domainLinks li {
+    margin: 0.1em 0;
+}
+
+#domainDownArrow {
+    color: #BF9A3C;
+}
+
+.hide {
+    display: none;
+}
+
+.display:hover .hide {
+    display: block;
+}
+
+.black {
+    text-decoration: none;
+    background-color: white;
+    color: #3B3A3A;
+}
+
+.white {
+    text-decoration: none;
+    background-color: #2c2c2c;
+    color: #F6F1EE;
+}
+
+nav a:hover {
+    color: #BF9A3C;
+}
+
+#contactLink {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    color: #BF9A3C;
+}
+
+.burger {
+    display: none;
+    margin: 1em 0.5em 1em 1em;
+}
+
+.burger i {
+    font-size: 32px;
+    color: #BF9A3C;
+}
+
+.yellowIcon {
+    font-size: 32px;
+    color: #BF9A3C;
+}
+
+#fondHeaderTitle {
+    background-image: url(./img/bandeau.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-top: solid 0.5em #BDA672;
+    position: relative;
+    height: 42em;
+}
+
+#fondHeaderTitle h1 {
+    color: white;
+    margin: 0;
+    font-size: 3.5em;
+    text-shadow: 1px 1px 2px black, -1px 1px 2px black;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+}
+
+#headerSquares {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    top: 32em;
+}
+
+#headerSquares p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headerSquares p::after {
+    content: '';
+    width: 30%;
+    flex: auto;
+    margin-top: 2em;
+    border-top: solid 3px #BDA672;
+}
+
+.squareItems {
+    text-align: center;
+    width: 20%;
+    padding: 2em;
+    border: solid 2px #F6F1EE;
+}
+
+.squareColorLight {
+    background-color: white;
+    color: #2c2c2c;
+}
+
+.squareColorDark {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+#tarifs {
+    margin-top: 10em;
+    margin-left: 5%;
+}
+
+#tarifs h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#tarifs h2::after {
+    content: '';
+    flex: auto;
+    width: 30%;
+    margin-top: 0.5em;
+    border-top: solid 2px #BF9A3C;
+}
+
+#tarifs p {
+    color: #3B3A3A;
+}
+
+#tarifs table {
+    color: #3B3A3A;
+    border-collapse: collapse;
+    width: 95%;
+    font-weight: 500;
+}
+
+tr,
+th,
+td {
+    border: solid 2px #BDA672;
+}
+
+tr :first-child {
+    padding-left: 1em;
+}
+
+tr :nth-child(2) {
+    padding: 1em 0.5em;
+    text-align: center;
+}
+
+tr :nth-child(3) {
+    padding: 1em 0.5em;
+    text-align: center;
+}
+
+.cellsbBackground {
+    background-color: #F6F1EE;
+}
+
+#tarifs em {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#tarifs em::after {
+    content: '';
+    flex: auto;
+    width: 95%;
+    margin-top: 4em;
+    border: solid 1px #BF9A3C;
+}
+
+#contactAndMap {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact {
+    width: 35%;
+    margin-top: 4em;
+}
+
+#googleMap {
+    width: 35%;
+    margin-top: 17em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h2::after {
+    content: '';
+    flex: auto;
+    width: 70%;
+    margin-top: 1em;
+    border-top: solid 2px #BDA672;
+}
+
+#contact p,
+label {
+    color: #3B3A3A;
+    display: block;
+    font-weight: 500;
+}
+
+#contact label {
+    margin-top: 1em;
+}
+
+#contact input {
+    background-color: #F6F1EE;
+    width: 98.5%;
+    padding: 1em;
+    border: none;
+}
+
+#subjectSelect {
+    background-color: #F6F1EE;
+    width: 104%;
+    height: 3em;
+    padding-left: 1em;
+    border: none;
+    font-size: 12px;
+    font-style: italic;
+}
+
+#message {
+    background-color: #F6F1EE;
+    width: 98.8%;
+    height: 200px;
+    padding: 1em;
+    border: none;
+    font-style: italic;
+    font-size: 12px;
+}
+
+#formBtn {
+    width: 104%;
+    display: flex;
+    justify-content: end;
+}
+
+form button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: #BF9A3C;
+    color: #F6F1EE;
+    font-size: 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.25em;
+}
+
+#contact::after {
+    content: '';
+    flex: auto;
+    width: 230%;
+    margin-top: 5em;
+    border-top: solid 2px #BDA672;
+}
+
+footer {
+    background-color: #2c2c2c;
+    color: #F6F1EE;
+}
+
+#footerLinks {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 8px #BDA672;
+    padding: 2em 5em;
+    font-size: 0.9rem;
+}
+
+#footerLinks a {
+    text-decoration: none;
+    color: #F6F1EE;
+    font-weight: 400;
+}
+
+#footerLinks a:hover {
+    color: #BDA672;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+#adress {
+    text-align: center;
+    font-weight: 400;
+}
+
+#adress i {
+    font-size: 30px;
+}
+
+#socialMediasIcons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+#footerLine {
+    height: 2px;
+    background-color: #F6F1EE;
+    width: 90%;
+    margin: 0 5%;
+}
+
+#legalNotices {
+    font-size: small;
+    text-align: center;
+    margin: 0;
+    padding-top: 2.5em;
+    padding-bottom: 1.5em;
+}
+
+/* Point de rupture tablette */
+@media (min-width: 600px) and (max-width: 950px) {
+
+    #cefiiGolfLogo {
+        width: 40%;
+    }
+
+    #navBar {
+        position: relative;
+    }
+
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 6.4em;
+        z-index: 1;
+        padding-inline-start: 5%;
+        width: 95%;
+        border-bottom: solid 5px #BF9A3C;
+    }
+
+    #navMenu li {
+        margin: 2em 0;
+    }
+
+    #domainLi {
+        position: static;
+    }
+
+    #domainLinks {
+        position: static;
+        padding-inline-start: 1em;
+    }
+
+    #domainLinks :nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    #domainLinks :nth-child(-n+2) a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #domainLinks :nth-child(-n+2) a::after {
+        content: '';
+        flex: auto;
+        width: 95%;
+        margin-top: 1em;
+        margin-left: -2em;
+        border-top: solid 2px #BF9A3C;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #fondHeaderTitle {
+        z-index: 0;
+    }
+
+    #fondHeaderTitle h1 {
+        font-size: 3em;
+        top: 3em;
+    }
+
+    #headerSquares {
+        flex-wrap: wrap;
+        top: 20em;
+    }
+
+    .squareItems {
+        width: 30%;
+        margin-bottom: 2em;
+    }
+
+
+    #subMenu {
+        display: none;
+    }
+
+    #adress i {
+        font-size: 24px;
+    }
+
+    #footerLinks {
+        padding: 2em 0.5em;
+        font-size: 0.8rem;
+    }
+
+    #footerLine {
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+/* Point de rupture smartphone */
+@media (max-width: 600px) {
+
+    #cefiiGolfLogo {
+        width: 50%;
+    }
+
+    #navBar {
+        position: relative;
+    }
+
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 6.4em;
+        z-index: 1;
+        padding-inline-start: 5%;
+        width: 95%;
+        border-bottom: solid 5px #BF9A3C;
+    }
+
+    #navMenu li {
+        margin: 2em 0;
+
+    }
+
+    #domainLi {
+        position: static;
+    }
+
+    #domainLinks {
+        position: static;
+        padding-inline-start: 1em;
+    }
+
+    #domainLinks :nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    #domainLinks :nth-child(-n+2) a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #domainLinks :nth-child(-n+2) a::after {
+        content: '';
+        flex: auto;
+        width: 95%;
+        margin-top: 1em;
+        margin-left: -2em;
+        border-top: solid 2px #BF9A3C;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    #fondHeaderTitle {
+        z-index: 0;
+    }
+
+    #fondHeaderTitle h1 {
+        font-size: 1.5em;
+        top: 1.5em;
+    }
+
+    #headerSquares {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        top: 8em;
+        width: 100%;
+    }
+
+    .squareItems {
+        margin-top: 1em;
+        width: 50%;
+    }
+
+    #footerLinks {
+        flex-direction: column;
+    }
+
+    #subMenu {
+        display: none;
+    }
+
+    #socialMedias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #socialMediasIcons {
+        justify-content: space-around;
+        width: 25%;
+    }
+
+    #socialMedias i {
+        font-size: 40px;
+    }
+
+    #adress i {
+        font-size: 32px;
+    }
+
+    #footerLine {
+        width: 100%;
+        margin: 0;
+    }
+
+}
