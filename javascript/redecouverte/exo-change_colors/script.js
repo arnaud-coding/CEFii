@@ -11,15 +11,16 @@ const colors = [
 ];
 
 const btnChange = document.querySelector('#btnChange');
-console.log("btnChange:", btnChange);
 const colorName = document.querySelector('#colorName');
-console.log("colorName:", colorName);
 
 // Variables
 let currentColorIndex = -1;
 
 // Fonction principale de changement de couleur
 function changeColor() {
+
+
+    // Génération d'un nouvel index aléatoire tant que l'index aléatoire correspond à l'index courant
     let newIndex;
     do {
         newIndex = Math.floor(Math.random() * colors.length);
@@ -29,8 +30,7 @@ function changeColor() {
     currentColorIndex = newIndex;
 
     //  Récupération de la couleur et mise à jour de l'interface
-    const actualColor = colors[newIndex];
-    // console.log(newIndex, colors[newIndex]);
+    const actualColor = colors[currentColorIndex];
 
     document.body.style.backgroundColor = actualColor.value;
     colorName.textContent = actualColor.name;
