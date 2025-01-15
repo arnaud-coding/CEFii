@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulation du DOM</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titre">Manipulation du DOM</h1>
+
+    <div id="container">
+        <p id="texte">Ceci est un paragraphe de test</p>
+        <button id="btnModifier">Modifier le texte</button>
+        <button id="btnAjouter">Ajouter un élément</button>
+    </div>
+
+    <div id="liste-container">
+        <ul id="maListe">
+            <li>Element 1</li>
+            <li>Element 2</li>
+        </ul>
+    </div>
+
+    <div id="formulaire">
+        <input type="text" id="monInput" placeholder="Entrez du texte">
+        <button id="btnValider">Valider</button>
+    </div>
+
+    <div id="elements-dynamiques"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
