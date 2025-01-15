@@ -77,7 +77,7 @@ function initialisation() {
 }
 
 // point d'entrée
-document.addEventListener("onload", initialisation());
+document.addEventListener("DOMContentLoaded", initialisation());
 
 // -------------------------------
 // EXERCICE 2 : Compteur de clicks
@@ -90,19 +90,20 @@ const reset = document.querySelector("#reset");
 console.log(reset);
 
 
-function counterInitialisation() {
+function Initialisation() {
 
     counterBtn.addEventListener("click", () => {
         count++;
         clickNumber.textContent = `You clicked ${count} time${count > 1 ? "s" : ""}!`;
     });
 
-    clickNumber.textContent = 'Click on the blue button to increment me !';
+    reset.addEventListener("click", () => {
+        count = 0;
+        clickNumber.textContent = count;
+    })
+
+    clickNumber.textContent = count;
 }
 
-reset.addEventListener("click", () => {
-    count = 0;
-    clickNumber.textContent = 'Click on the blue button to increment me !';
-})
 
-document.addEventListener("onload", counterInitialisation());
+document.addEventListener("DOMContentLoaded", Initialisation());
