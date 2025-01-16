@@ -43,21 +43,11 @@ function validateAll(password) {
 
     let checkCount = 0;
 
-    // Validation de la longueur
-    checkCount += validateOne(lengthRegex, password, checkLength, xmarkLength);
-
-    // Présence d'une majuscule
-    checkCount += validateOne(majRegex, password, checkMaj, xmarkMaj);
-
-    // Présence d'une minuscule
-    checkCount += validateOne(minRegex, password, checkMin, xmarkMin);
-
-    // Présence d'une chiffre
-    checkCount += validateOne(numberRegex, password, checkNumber, xmarkNumber);
-
-    // Présence d'un caractère spécial
-    checkCount += validateOne(specialCharRegex, password, checkSpecialChar, xmarkSpecialChar);
-
+    checkCount += validateOne(lengthRegex, password, checkLength, xmarkLength); // Validation de la longueur
+    checkCount += validateOne(majRegex, password, checkMaj, xmarkMaj); // Présence d'une majuscule
+    checkCount += validateOne(minRegex, password, checkMin, xmarkMin); // Présence d'une minuscule
+    checkCount += validateOne(numberRegex, password, checkNumber, xmarkNumber); // Présence d'une chiffre
+    checkCount += validateOne(specialCharRegex, password, checkSpecialChar, xmarkSpecialChar); // Présence d'un caractère spécial
 
     const percent = `${checkCount * 20}%`;
     bsProgressBar.style.width = percent;

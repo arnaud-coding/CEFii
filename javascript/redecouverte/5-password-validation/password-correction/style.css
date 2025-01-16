@@ -1,0 +1,71 @@
+:root {
+    --weak: #ff4444;
+    --medium: #ffbb33;
+    --strong: #00C851;
+}
+
+.container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.password-container {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.strength-meter {
+    height: 4px;
+    background: #ddd;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    transition: all 0.3s;
+    background: var(--weak);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.requirements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements li {
+    margin: 0.5rem 0;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.requirements li::before {
+    content: '✗';
+    color: var(--weak);
+}
+
+.requirements li.valid::before {
+    content: '✓';
+    color: var(--strong);
+}
